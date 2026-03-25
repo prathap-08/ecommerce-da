@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce Analytics Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/frontend/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__left">
+      <p class="eyebrow">MNC Analytics Suite</p>
+      <h1>E-Commerce Command Center</h1>
+      <p class="subtitle">Real-time business view across revenue, product velocity, customer value, and forecast risk.</p>
+    </div>
+    <div class="hero__badge">LIVE API</div>
+  </header>
+
+  <main class="grid">
+    <section class="panel kpis" id="kpiCards"></section>
+
+    <section class="panel">
+      <h2>Monthly Revenue Trend</h2>
+      <div class="table-wrap"><table id="monthlyTable"></table></div>
+    </section>
+
+    <section class="panel">
+      <h2>Top Products</h2>
+      <div class="table-wrap"><table id="productsTable"></table></div>
+    </section>
+
+    <section class="panel">
+      <h2>Region Performance</h2>
+      <div class="table-wrap"><table id="regionTable"></table></div>
+    </section>
+
+    <section class="panel">
+      <h2>RFM Segment Summary</h2>
+      <div class="table-wrap"><table id="rfmTable"></table></div>
+    </section>
+
+    <section class="panel">
+      <h2>Sales Forecast</h2>
+      <div class="table-wrap"><table id="forecastTable"></table></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Backend: FastAPI</span>
+    <span>Frontend: HTML/CSS/JS</span>
+  </footer>
+
+  <script src="/frontend/app.js"></script>
+</body>
+</html>
